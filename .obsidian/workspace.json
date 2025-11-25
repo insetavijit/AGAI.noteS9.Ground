@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "135d86cd5fdd8538",
+    "type": "split",
+    "children": [
+      {
+        "id": "f67a8ad6576983d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e55fc7192a58916",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LangChain - Study Guideline/PromptTemplates/PromptTemplates.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PromptTemplates"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fe4f5d4c804276d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fac410c342decbb3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "062f773acca88ad5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:prompttemplate",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "078c53181132678b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "86282bed756eab44",
+    "type": "split",
+    "children": [
+      {
+        "id": "7236b54bbe262df4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04677682336db9d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "adae0d0d7e26f88e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "APPLIED PRACTICE — PromptTemplate.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for APPLIED PRACTICE — PromptTemplate"
+            }
+          },
+          {
+            "id": "efc5b95926108ea7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "APPLIED PRACTICE — PromptTemplate.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from APPLIED PRACTICE — PromptTemplate"
+            }
+          },
+          {
+            "id": "f4b0cb24db6f7438",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0541dcb9f10fa7c3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d983c7958beeaa24",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "APPLIED PRACTICE — PromptTemplate.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of APPLIED PRACTICE — PromptTemplate"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6e55fc7192a58916",
+  "lastOpenFiles": [
+    "LangChain - Study Guideline/PromptTemplates/4.0 ACTIVE RECALL — PromptTemplate.md",
+    "LangChain - Study Guideline/PromptTemplates/PromptTemplates.md",
+    "LangChain - Study Guideline/PromptTemplates/2.0 APPLIED PRACTICE — PromptTemplate.md",
+    "LangChain - Study Guideline/PromptTemplates/1.0 FOUNDATIONS — PromptTemplate.md",
+    "LangChain - Study Guideline/@LangChain - Study Guideline.md",
+    "LangChain - Study Guideline/PromptTemplates",
+    "LangChain - Study Guideline/4.4 Memory Anchors.md",
+    "LangChain - Study Guideline/PromptTemplates/4.4 Memory Anchors – PromptTemplate.md",
+    "LangChain - Study Guideline/PromptTemplates/4.2 Quizzes – PromptTemplates.md",
+    "LangChain - Study Guideline/PromptTemplates/4.1 Flashcards (Q - A) - PromptTemplate.md",
+    "LangChain - Study Guideline/PromptTemplates/2.3 - Remainings (PromptTemplates ).md",
+    "2.2 PromptTemplates - Mini Projects.md",
+    "LangChain - Study Guideline/PromptTemplates/2.2 - Mini Projects (PromptTemplates).md",
+    "LangChain - Study Guideline/PromptTemplates/2.1 - APPLIED PRACTICE (PromptTemplates).md",
+    "Learning Engine - Start template.md",
+    "LLMs & Chat Models.md",
+    "Messages.md",
+    "nointent -.md"
+  ]
+}
