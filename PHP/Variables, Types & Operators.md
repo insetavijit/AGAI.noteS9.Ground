@@ -4,21 +4,24 @@ Mastering variables, data types, and operators is the essential foundation for w
 
 ### **Topics to Learn — Variables, Types & Operators**
 
-| **Topic**                | **Brief Description**                                                        |
-| ------------------------ | ---------------------------------------------------------------------------- |
-| **Variable Declaration** | Creating named storage locations for values using `$variableName`.           |
-| **Naming Conventions**   | Clear, meaningful names using camelCase for readability and maintainability. |
-| **Data Types**           | Understanding int, float, string, bool, array, object, null, resource.       |
-| **Type Juggling**        | Automatic type conversion that PHP performs silently during operations.      |
-| **Strict Typing**        | `declare(strict_types=1)` to enforce safer and predictable type behavior.    |
-| **Constants**            | Using `const` or `define()` for values that must never change.               |
-| **Operators**            | Arithmetic, assignment, comparison, logical, and string concatenation tools. |
-| **Operator Precedence**  | Execution order that determines calculation results (`*` before `+`).        |
-| **Scope**                | Where a variable exists—global, local, static, and closure context.          |
-| **Copy-on-Write**        | Optimization where PHP copies values only when modified.                     |
-| **Casting & Conversion** | `(int)`, `(float)`, `(string)` type transformations.                         |
-| **Debugging Tools**      | `var_dump`, `print_r`, `debug_zval_dump` to inspect values and types.        |
-| **Garbage Collection**   | Memory cleanup when variables go out of scope or are `unset()`.              |
+| **Topic**                  | **Brief Description**                                                        |
+| -------------------------- | ---------------------------------------------------------------------------- |
+| **Variable Declaration**   | Creating named storage locations for values using `$variableName`.           |
+| **Naming Conventions**     | Clear, meaningful names using camelCase for readability and maintainability. |
+| **Data Types**             | Understanding int, float, string, bool, array, object, null, resource.       |
+| **Type Juggling**          | Automatic type conversion that PHP performs silently during operations.      |
+| **Strict Typing**          | `declare(strict_types=1)` to enforce safer and predictable type behavior.    |
+| **Constants**              | Using `const` or `define()` for values that must never change.               |
+| **Operators**              | Arithmetic, assignment, comparison, logical, and string concatenation tools. |
+| **Operator Precedence**    | Execution order that determines calculation results (`*` before `+`).        |
+| **Scope**                  | Where a variable exists—global, local, static, and closure context.          |
+| **Copy-on-Write**          | Optimization where PHP copies values only when modified.                     |
+| **Casting & Conversion**   | `(int)`, `(float)`, `(string)` type transformations.                         |
+| **Debugging Tools**        | `var_dump`, `print_r`, `debug_zval_dump` to inspect values and types.        |
+| **[[Garbage Collection.spl]]** | Memory cleanup when variables go out of scope or are `unset()`.              |
+
+> [!quote] Rasmus Lerdorf (Creator of PHP) "PHP is about getting shit done — but only the people who truly master variables, types and operators get to do it elegantly, fast, and without ever being surprised."
+> 
 ## life of a ver
 ```cs
 Variable Flow Path:
@@ -57,14 +60,14 @@ System Output: **Final Value Used / Output Generated**
       • Eventually removed at script termination (end of request lifecycle)
       
 ```
-> [!quote] Rasmus Lerdorf (Creator of PHP) "PHP is about getting shit done — but only the people who truly master variables, types and operators get to do it elegantly, fast, and without ever being surprised."
+
+
 
 ---
 
 ## 01. Variable Declaration
 
 **Core Concept:** Creating named storage locations for values using `$variableName` syntax.
-
 ### The Reality Behind Declaration
 
 When you write `$price = 99.99;`, PHP doesn't just "store a number." Here's what actually happens:
@@ -90,7 +93,6 @@ struct _zval_struct {
 ```
 
 ### Why Variable Naming Is Your Highest-Leverage Skill
-
 **The 60% Rule**: Studies of production PHP codebases show that **60% of debugging time** is spent on confusion caused by poor variable names. Not algorithms. Not architecture. Names.
 
 ### 2025 Best Practices + Real Cost of Violation
@@ -1414,5 +1416,26 @@ Here’s what each tool actually inspects:
 - Xdebug = putting the car on a dynamometer and driving it step-by-step
 
 In modern PHP 8.2+, combine with `get_debug_type($var)` for clean, human-readable type names without the noise of `var_dump()`.
+
+---
+
+Here is a **condensed “most important only” version** focused on what actually matters in real-world PHP engineering & interviews:
+
+---
+
+## 13. [[Garbage Collection.spl]]
+
+| **Topic**                                  | **Why It Matters**                                                                     |
+| ------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **Memory Model & zval**                    | Foundation for understanding variable storage, references, and copy-on-write behavior. |
+| **Reference Counting**                     | Explains when memory is freed vs retained; root cause of many leaks.                   |
+| **Circular References & Cycle Collection** | Key reason GC exists; essential for preventing leaks in real systems.                  |
+| **GC Triggers**                            | Knowing when PHP actually runs cleanup helps performance tuning.                       |
+| **Manual GC Control**                      | Useful in workers, jobs, and high-memory workloads.                                    |
+| **Unset() vs Scope Exit**                  | Practical technique for reclaiming memory early.                                       |
+| **Long-Running Script Strategy**           | Critical for daemons, queues, imports, real-time processes.                            |
+| **Debugging Memory Leaks**                 | Must-know tools and techniques for diagnosing problems.                                |
+| **Web vs CLI GC Behavior**                 | Impacts resource planning in persistent apps like Swoole / RoadRunner.                 |
+| **Best Practices & Real-World Scenarios**  | Converts theory into production decisions.                                             |
 
 ---
