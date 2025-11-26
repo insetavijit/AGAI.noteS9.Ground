@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHP/2.0 APPLIED PRACTICE — PHP.md",
-                "mode": "source",
+                "file": "Switch-Match.spl.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.0 APPLIED PRACTICE — PHP"
+              "title": "Switch-Match.spl"
             }
           },
           {
@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "Variables, Types & Operators"
             }
+          },
+          {
+            "id": "a64d27f1fadb8143",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raugh - 2.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "raugh - 2"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,16 +226,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "8e1d0f271e929a81",
+  "active": "33579e7b4a736831",
   "lastOpenFiles": [
+    "raugh - 2.md",
+    "Switch-Match.spl.md",
+    "Control Flow & Iteration.md",
     "PHP/2.0 APPLIED PRACTICE — PHP.md",
+    "PHP/Variables, Types & Operators.md",
     "PHP/@PHP Guideline.md",
     "PHP/Garbage Collection.spl.md",
     "raugh - 1.md",
-    "raugh - 2.md",
     "final.md",
     "spl Core Topics - — GC & Memory Model in PHP.md",
-    "PHP/Variables, Types & Operators.md",
     "PHP/MAP - PHP 1.0.md",
     "PHP/Sup - Operator Precedence - php.md",
     "PHP/1.0 FOUNDATIONS — PHP.md",
@@ -240,8 +256,6 @@
     "PYTHON/@PYTHON - JOURNY 1.0.md",
     "PYTHON/4.0 ACTIVE RECALL — Python.md",
     "PYTHON/QUICK REFERENCE — Python.md",
-    "PYTHON/2.0 APPLIED PRACTICE — Python.md",
-    "PYTHON/1.0 FOUNDATIONS — Python.md",
     "PYTHON",
     "Untitled/desktop.ini",
     "_bin/arChive",
