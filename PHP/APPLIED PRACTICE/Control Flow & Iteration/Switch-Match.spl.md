@@ -33,21 +33,12 @@ Real-world systems like routing tables, pricing rules, notification dispatch, er
 |**Real-World Analogy**|Like a **reception desk** directing you to the correct department based on your ticket number.|
 
 ---
-
-
-Absolutely — here is a **final polished answer** for the topic:
-
----
-
 #### 02 Break & Fall-Through in `switch`
 
 ##### **What It Means**
 
 **Break and Fall-Through** control how execution flows inside a `switch` statement.
 When a case matches, execution will **continue into the next case** unless a `break` stops it — this automatic continuation is called **fall-through**. Using `break` intentionally stops execution after the matched case, ensuring clean, isolated logic.
-
----
-
 ##### **Fall-Through Example (execution continues)**
 
 ```php
@@ -71,9 +62,6 @@ View access
 ```
 
 > Fall-through can cause serious logic or security problems when not intentional.
-
----
-
 ##### **Break Example (execution stops correctly)**
 
 ```php
@@ -96,8 +84,6 @@ switch ($role) {
 
 > `break` prevents unintended execution and ensures only the matched case runs.
 
----
-
 ##### **When to Use Which**
 
 | Case                                           | Use                                                        |
@@ -105,8 +91,6 @@ switch ($role) {
 | You want logic isolation per case              | **Use `break`**                                            |
 | You want grouped cases with identical behavior | **Use intentional fall-through (commented or documented)** |
 | You want guaranteed no fall-through errors     | **Use `match` instead of `switch`**                        |
-
----
 
 ##### **Modern Recommendation (2025+)**
 
@@ -121,9 +105,7 @@ $access = match ($role) {
 
 > `match` eliminates fall-through entirely, improving safety and readability.
 
----
-
-##### **Core Takeaway**
+##### **ore Takeaway**
 
 > **Fall-through continues execution into the next case.
 > `break` stops execution after a match.
@@ -418,8 +400,7 @@ switch ($action) {
 ```
 
 ---
-### **Interview Questions **
----
+### **Interview Questions
 #### **Q1. When should I use `match` instead of `switch` in PHP?**
 
 **Answer —**  
