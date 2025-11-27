@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "final.md",
-                "mode": "preview",
+                "file": "Syntax, Types & Operators.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "final"
+              "title": "Syntax, Types & Operators"
             }
           }
         ]
@@ -96,12 +96,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "final.md",
+                "file": "Syntax, Types & Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from final"
+              "title": "Outgoing links from Syntax, Types & Operators"
             }
           },
           {
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "final.md",
+                "file": "Syntax, Types & Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for final"
+              "title": "Backlinks for Syntax, Types & Operators"
             }
           },
           {
@@ -129,13 +129,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "final.md",
-                "followCursor": false,
+                "file": "Syntax, Types & Operators.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of final"
+              "title": "Outline of Syntax, Types & Operators"
             }
           }
         ],
@@ -216,20 +216,26 @@
   },
   "active": "4dae71c85c568d77",
   "lastOpenFiles": [
+    "PHP/4.0 ACTIVE RECALL — PHP.md",
+    "Syntax, Types & Operators.md",
+    "Common Functions & Constructs.md",
+    "LangChain - Study Guideline/PromptTemplates/4.1 Flashcards (Q - A) - PromptTemplate.md",
+    "PHP/@PHP Guideline.md",
+    "PHP/2.0 APPLIED PRACTICE — PHP.md",
+    "PHP/APPLIED PRACTICE/Control Flow & Iteration.md",
+    "PHP/APPLIED PRACTICE/Control Flow & Iteration/Switch-Match.spl.md",
+    "PHP/APPLIED PRACTICE/Variables, Types & Operators.md",
+    "PHP/APPLIED PRACTICE/Garbage Collection.spl.md",
+    "ACTIVE RECALL",
+    "final.md",
     "raugh - 1.md",
     "raugh - 2.md",
     "PHP/APPLIED PRACTICE/Functions & Type Hints.md",
     "PHP/APPLIED PRACTICE/String & Array Operations.md",
     "PHP/APPLIED PRACTICE/Basic Form Handling.md",
-    "PHP/2.0 APPLIED PRACTICE — PHP.md",
-    "PHP/APPLIED PRACTICE/Control Flow & Iteration.md",
     "PHP/APPLIED PRACTICE/Real-World-Iteration-Patterns.spl.md",
-    "PHP/@PHP Guideline.md",
-    "PHP/APPLIED PRACTICE/Variables, Types & Operators.md",
     "PHP/APPLIED PRACTICE",
-    "PHP/APPLIED PRACTICE/Control Flow & Iteration/Switch-Match.spl.md",
     "PHP/APPLIED PRACTICE/Control Flow & Iteration/Conditional-Logic.spl.md",
-    "Untitled",
     "PHP/APPLIED PRACTICE/Control Flow & Iteration",
     "Co",
     "PHP/APPLIED PRACTICE/Control Flow & Iteration/Loop-Control.spl.md",
@@ -240,12 +246,6 @@
     "PHP/MAP - PHP 1.0.md",
     "_bin/arChive/LLMs & Chat Models.md",
     "_bin/arChive/Learning Engine - Start template.md",
-    "_bin/arChive/nointent -.md",
-    "_bin/arChive/Untitled.md",
-    "_bin/@explorations/Challenge - WordPress Dev Assistant.md",
-    "LangChain - Study Guideline/PromptTemplates/PromptTemplates.md",
-    "LangChain - Study Guideline/PromptTemplates/1.0 FOUNDATIONS — PromptTemplate.md",
-    "LangChain - Study Guideline/PromptTemplates/4.2 Quizzes – PromptTemplates.md",
     "Papers",
     "Untitled.canvas",
     "Untitled.base",
