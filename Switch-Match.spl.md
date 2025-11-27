@@ -1,4 +1,4 @@
-## 🧠 **Switch / Match — Overview**
+## **Switch / Match — Overview**
 
 `switch` and `match` provide a cleaner, more structured alternative to long `elseif` chains when you are comparing **one value against multiple possible outcomes**. They improve readability, reduce cognitive load, and make decision trees easier to maintain—especially in systems where rules evolve frequently.
 
@@ -17,9 +17,7 @@ Real-world systems like routing tables, pricing rules, notification dispatch, er
 | **Best Fit Use Cases**      | When multiple outcomes depend on a single evaluated value.                           |
 | **Error Handling Patterns** | Mapping status codes, response objects, and standard result routing.                 |
 
-
 ---
-
 #### 01 Basic Switch — Deep Exploration
 ##### 🧑‍🏫 **Mentor Interpretation**
 
@@ -218,8 +216,6 @@ Absolutely — here is the **final polished section** for:
 #### 04 Return-based Branching**
 ##### **What It Means**
 **Return-based branching** is a modern approach to decision-making where the branching structure directly **returns a value**, rather than modifying a variable first and returning later. It eliminates scattered return points, avoids large nested conditional blocks, and results in compact, readable, and predictable control flow. This pattern pairs naturally with `match` and functional-style architecture.
-
-
 ##### **Example — Inline Return vs Traditional Conditional**
 
 ######## **Traditional conditional (noisy, repetitive)**
@@ -258,8 +254,6 @@ Not Found
 ```
 
 > The function returns immediately from the expression, with **no variable assignment, no repetition, and no deep nesting**.
-
-
 ##### **Key Advantages**
 
 | Benefit                      | Explanation                                     |
@@ -269,8 +263,6 @@ Not Found
 | Functional Style             | Easy to test, reason about, and refactor        |
 | Reduces Bugs                 | Avoids mutation and missing return issues       |
 | Works Perfectly with `match` | Expression-style inline value resolution        |
-
-
 ##### **When to Use**
 
 | Scenario                                        | Why                                   |
@@ -279,8 +271,6 @@ Not Found
 | DTO / View model selection                      | easier than nested if-else            |
 | Mapping inputs to results                       | deterministic, expression-style logic |
 | Avoiding mutable variables and multiple returns | reduces cognitive load                |
-
-
 ##### **Why Not Other Tools**
 
 * `switch` requires assignment, break management, and is action-oriented rather than value-oriented.
@@ -293,6 +283,114 @@ Not Found
 > **Return-based branching simplifies logic by returning values directly from decision expressions, eliminating large conditional blocks and improving clarity, testability, and safety.**
 
 ---
+#### 05 Best Fit Use Cases
+
+##### **What It Means**
+**Best fit use cases** describe the ideal scenarios where a specific branching construct performs optimally. For decision logic where multiple outcomes depend on evaluating **one input value**, the most suitable tool is a **`match` expression** (or a well-structured `switch` in legacy contexts). This pattern centralizes branching around one discriminator and produces clear, deterministic results without complex boolean conditions or nested structures.
+##### **Example — Best Fit Use Case for Single-Value Outcome Selection**
+
+```php
+function badgeColor(string $status): string {
+    return match ($status) {
+        'success' => 'green',
+        'warning' => 'yellow',
+        'error'   => 'red',
+        'info'    => 'blue',
+        default   => 'gray',
+    };
+}
+```
+
+**Output**
+
+```
+green
+```
+
+##### **Why This Is the Best Fit**
+
+- The decision depends on **one evaluated value** (`$status`)
+    
+- There are **multiple possible outcomes**, each exclusive
+    
+- No relational comparisons or multiple conditions are required
+    
+- The logic maps cleanly into a decision table structure
+    
+- The branching result is a single return value, perfect for expression-based style
+    
+- Improves clarity and safety compared to long `if/elseif` chains
+##### **When to Use This Pattern**
+
+|Situation|Use|
+|---|---|
+|Single input controlling multiple outcomes|✔ Ideal|
+|Mapping states, statuses, roles, categories|✔ Efficient|
+|Returning result with no side effects|✔ Cleaner|
+|Replacing complex and nested condition blocks|✔ Readable|
+|Preparing code for enum-based architecture|✔ Modern|
+##### **Why Not the Other Tools**
+
+- `if / elseif` becomes long, repetitive, and harder to maintain when states increase.
+    
+- `switch` risks fall-through without careful break placement and feels verbose with value mapping.
+    
+- `match(true)` adds unnecessary complexity since no range or boolean logic is present.
+##### **Core Takeaway**
+
+> **Use `match` when multiple exclusive outcomes depend on evaluating one single value — the result is clean, readable, deterministic, and future-proof.**
+---
+#### 06. Error Handling Patterns
+
+##### **What It Means**
+**Error handling patterns** define structured ways to transform system status codes, exception states, or internal result objects into consistent responses. Instead of scattering `if/elseif` or deeply nested condition checks across the codebase, modern architectures centralize this logic using `match` expressions to route outcomes cleanly to UI messages, API responses, or error objects. This ensures predictable behavior and simplifies debugging, maintenance, and extensibility.
+
+##### **Example — Routing Status Codes to Error Responses**
+
+```php
+function errorResponse(int $code): string {
+    return match ($code) {
+        200 => 'OK',
+        400 => 'Bad Request — invalid input received.',
+        401 => 'Unauthorized — login required.',
+        403 => 'Forbidden — insufficient permissions.',
+        404 => 'Resource Not Found.',
+        500 => 'Internal Server Error.',
+        default => 'Unhandled Error — please try again later.',
+    };
+}
+```
+
+**Output**
+
+```
+Bad Request — invalid input received.
+```
+
+##### **Why This Pattern Works Well**
+
+* All error-to-message mappings live in one clean location, not spread across the app
+* `match` enforces strict handling and prevents silent missing error branches
+* Avoids accidental fall-through or ambiguous behavior common in `switch`
+* Makes unit testing and observability simple and deterministic
+* Supports functional, predictable API response pipelines
+##### **Best Fit Use Cases**
+
+| Scenario                                   | Pattern Benefit                                |
+| ------------------------------------------ | ---------------------------------------------- |
+| HTTP response mapping                      | Consistent error presentation and traceability |
+| Exception → user message conversion        | Safe abstractions for UI layers                |
+| Result objects in service layers           | Stable contract between domain and interface   |
+| Routing workflows based on status          | No fragile conditional branches                |
+| API standardization (success/error models) | Clear predictable handling across endpoints    |
+##### **Why Not the Other Tools**
+* `switch` risks missing `break` and leaking additional cases, causing incorrect messaging
+* `if / elseif` quickly becomes long and difficult to maintain as response types grow
+* `match(true)` is unnecessary when conditions depend on exact values rather than ranges
+##### **Core Takeaway**
+
+> **Use `match` for error handling patterns where status codes or result objects must reliably map to standardized responses — ensuring clarity, safety, and consistency across the application.**
+
 ### **Real-World Practical Example**
 
 ```php
