@@ -4,20 +4,20 @@ Mastering variables, data types, and operators is the essential foundation for w
 
 ### **Topics to Learn — Variables, Types & Operators**
 
-| **Topic**                  | **Brief Description**                                                        |
-| -------------------------- | ---------------------------------------------------------------------------- |
-| **Variable Declaration**   | Creating named storage locations for values using `$variableName`.           |
-| **Naming Conventions**     | Clear, meaningful names using camelCase for readability and maintainability. |
-| **Data Types**             | Understanding int, float, string, bool, array, object, null, resource.       |
-| **Type Juggling**          | Automatic type conversion that PHP performs silently during operations.      |
-| **Strict Typing**          | `declare(strict_types=1)` to enforce safer and predictable type behavior.    |
-| **Constants**              | Using `const` or `define()` for values that must never change.               |
-| **Operators**              | Arithmetic, assignment, comparison, logical, and string concatenation tools. |
-| **Operator Precedence**    | Execution order that determines calculation results (`*` before `+`).        |
-| **Scope**                  | Where a variable exists—global, local, static, and closure context.          |
-| **Copy-on-Write**          | Optimization where PHP copies values only when modified.                     |
-| **Casting & Conversion**   | `(int)`, `(float)`, `(string)` type transformations.                         |
-| **Debugging Tools**        | `var_dump`, `print_r`, `debug_zval_dump` to inspect values and types.        |
+| **Topic**                      | **Brief Description**                                                        |
+| ------------------------------ | ---------------------------------------------------------------------------- |
+| **Variable Declaration**       | Creating named storage locations for values using `$variableName`.           |
+| **Naming Conventions**         | Clear, meaningful names using camelCase for readability and maintainability. |
+| **Data Types**                 | Understanding int, float, string, bool, array, object, null, resource.       |
+| **Type Juggling**              | Automatic type conversion that PHP performs silently during operations.      |
+| **Strict Typing**              | `declare(strict_types=1)` to enforce safer and predictable type behavior.    |
+| **Constants**                  | Using `const` or `define()` for values that must never change.               |
+| **Operators**                  | Arithmetic, assignment, comparison, logical, and string concatenation tools. |
+| **Operator Precedence**        | Execution order that determines calculation results (`*` before `+`).        |
+| **Scope**                      | Where a variable exists—global, local, static, and closure context.          |
+| **Copy-on-Write**              | Optimization where PHP copies values only when modified.                     |
+| **Casting & Conversion**       | `(int)`, `(float)`, `(string)` type transformations.                         |
+| **Debugging Tools**            | `var_dump`, `print_r`, `debug_zval_dump` to inspect values and types.        |
 | **[[Garbage Collection.spl]]** | Memory cleanup when variables go out of scope or are `unset()`.              |
 
 > [!quote] Rasmus Lerdorf (Creator of PHP) "PHP is about getting shit done — but only the people who truly master variables, types and operators get to do it elegantly, fast, and without ever being surprised."
