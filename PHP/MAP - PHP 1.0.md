@@ -5,30 +5,30 @@
 
 # 1. FOUNDATIONS (ALL – PHP CONTEXT)
 
-1.1 Definitions – core PHP terms
+1.1 **Definitions** – core PHP terms
 * Script, interpreter, runtime
 * Statements, expressions, variables
 * Scalars (int, float, string, bool)
 * Arrays, associative arrays, objects
 * Functions, methods, classes, interfaces, traits
 * Namespace, autoloading, composer package
-1.2 Core Principles – how PHP “thinks”
+1.2 **Core Principles** – how PHP “thinks”
 * Request–response model (per-request execution)
 * Weak vs strict typing (`declare(strict_types=1)`)
 * Superglobals (`$_GET`, `$_POST`, `$_SERVER`, `$_SESSION`, `$_COOKIE`, `$_FILES`)
 * Error vs Exception handling
 * Configuration via `php.ini` and `.htaccess`
 * Runtime environment: SAPI (CLI, FPM, Apache module)
-1.3 Mental Models – intuition builders
+1.3 **Mental Models** – intuition builders
 * “PHP as a template engine” → mixing HTML & PHP
 * “PHP as a scripting glue” → connecting DB, cache, APIs
 * “Stateless per request” → nothing persists unless you store it
 * “Composer is npm for PHP” – dependency & autoload manager
 * “Framework as traffic controller” – routing, controllers, views, services
-1.4 Architecture Overview – typical PHP web stack
+1.4 **Architecture Overview** – typical PHP web stack
 1.4.1 High-Level Diagram
 * Browser → Web server (Nginx/Apache) → PHP-FPM/PHP module → App (plain PHP / framework) → DB / cache / services
-1.4.2 Components & Responsibilities
+1.4.2 **Components & Responsibilities**
 * Front controller (`index.php`)
 * Router → routes URL to controller/action
 * Controller → coordinates request handling

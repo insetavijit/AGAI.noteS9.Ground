@@ -1,13 +1,4 @@
-
-
-> [!quote] Yajur Veda 19.30  
-> **“विद्याम् चाविद्याम् च यस्तद्वेदोभयं सह।”**  
-> *“True wisdom is gained by uniting knowledge with action.”*  
-> Learning Loop: ** Explore → Learn → Do → Comprehend → Improve → Repeat**
-
-
----
-# 1. FOUNDATIONS ( ALL )
+# 1. FOUNDATIONS ( XX-XXXX-XX )
 1.1 Definitions – brief overview of essential terms and concepts  
 1.2 Core Principles – guiding rules, fundamentals, and theoretical base  
 1.3 Mental Models – intuitive ways to understand how the system works  
@@ -19,7 +10,7 @@
 1.6 Limitations & Trade-offs – what it cannot do and constraints to consider  
 
 ---
-# 2. APPLIED PRACTICE ( 4 Sheets )
+# 2. APPLIED PRACTICE ( XXXX )
 2.1 Code Examples – practical snippets from basic to advanced  
     2.1.1 Basic Examples – simple usage demonstrations  
     2.1.2 Intermediate Examples – moderate complexity patterns  
@@ -39,7 +30,7 @@
     2.5.3 System Integrations – connecting with other technologies  
 
 ---
-# 3. QUICK REFERENCE
+# 3. QUICK REFERENCE (XX)
 3.1 Cheatsheets – condensed one-page summaries  
 3.2 Snippets – copy-paste ready solutions  
 3.3 Templates – reusable structures for faster work  
@@ -57,7 +48,7 @@
     3.6.3 Security Considerations – safe usage patterns  
 
 ---
-# 4. ACTIVE RECALL (3 Sheets )
+# 4. ACTIVE RECALL (X)
 4.1 Flashcards (Q/A) – quick memory checks  **[🗸]**
 4.2 Quizzes – assess understanding at different levels  **[🗸]**
     4.2.1 Beginner Quiz – basic concept testing  
